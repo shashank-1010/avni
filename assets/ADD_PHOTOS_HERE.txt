@@ -1,0 +1,8 @@
+Is folder ka istemal sirf tab hai agar aap photos ko LOCAL file ke roop me use karna chahte ho
+(link ki jagah). Agar aisa karna hai:
+1. Apni 4 photos is 'assets' folder me daal do (e.g. photo1.jpg, photo2.jpg, photo3.jpg, photo4.jpg)
+2. birthday.html kholo, "photos:" wali line dhoondo, aur links ki jagah likho:
+   "assets/photo1.jpg","assets/photo2.jpg","assets/photo3.jpg","assets/photo4.jpg"
+
+Warna default: bas birthday.html me "PASTE-YOUR-IMAGE-LINK-HERE" ki jagah seedha image ka
+web link paste kar do, tab is folder ki zaroorat nahi.
