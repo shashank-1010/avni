@@ -534,8 +534,6 @@ function onNo1(e){
   const seq=C.q1NoSequence;
   $('noBtn').textContent=seq[noAttempts % seq.length];
   $('noBtn').classList.add('wobble'); setTimeout(()=>$('noBtn').classList.remove('wobble'),400);
-  $('yesBtn').classList.add('grow');
-  $('yesBtn').style.setProperty('--base-scale', Math.min(1+noAttempts*0.15,4.2));
   $('yesBtn').style.zIndex=40;
   $('q1Sticker').textContent=['🤨','😂','😳','👀'][noAttempts%4];
   burst(['💗'],4);
@@ -555,8 +553,6 @@ function onFriend(e){
   const seq=C.q2FriendSequence;
   $('friendBtn').textContent=seq[friendAttempts % seq.length];
   $('friendBtn').classList.add('wobble'); setTimeout(()=>$('friendBtn').classList.remove('wobble'),400);
-  $('loverBtn').classList.add('grow');
-  $('loverBtn').style.setProperty('--base-scale', Math.min(1+friendAttempts*0.15,4.2));
   $('loverBtn').style.zIndex=40;
   $('q2Sticker').textContent=['😂','🙈','😭','👀','😌'][friendAttempts%5];
   burst(['💗'],4);
@@ -639,8 +635,6 @@ function restart(){
   });
   $('noBtn').textContent=C.q1NoSequence[0];
   $('friendBtn').textContent=C.q2FriendSequence[0];
-  $('yesBtn').classList.remove('grow'); $('yesBtn').style.removeProperty('--base-scale');
-  $('loverBtn').classList.remove('grow'); $('loverBtn').style.removeProperty('--base-scale');
   $('q2Row').style.display='flex'; $('q2Reaction').innerHTML='';
   $('countdown').style.display='flex'; $('bArrived').style.display='none';
   $('birthdayNextBtn').textContent='Continue →';
